@@ -1,0 +1,54 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DataFormat JS</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>DataFormat JS</h1>
+    <p>Validação e Formatação de Dados com JavaScript</p>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Validação de E-mail</h2>
+      <input type="text" id="email"
+             placeholder="exemplo@email.com">
+      <button id="btn-email">Validar E-mail</button>
+      <p id="resultado-email"></p>
+    </section>
+
+    <section class="card">
+      <h2>Validação de Telefone</h2>
+      <input type="text" id="telefone"
+             placeholder="(81) 99999-8888">
+      <button id="btn-telefone">Validar Telefone</button>
+      <p id="resultado-telefone"></p>
+    </section>
+
+    <section class="card">
+      <h2>Formatação de Moeda</h2>
+      <input type="number" id="valor"
+             placeholder="Digite um valor" step="0.01">
+      <button id="btn-moeda">Formatar Moeda</button>
+      <p id="resultado-moeda"></p>
+    </section>
+
+    <section class="card">
+      <h2>Formatação de Data</h2>
+      <input type="date" id="data">
+      <button id="btn-data">Formatar Data</button>
+      <p id="resultado-data"></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Seminário Fullstack JavaScript | Tema 06</p>
+  </footer>
+</body>
+</html>

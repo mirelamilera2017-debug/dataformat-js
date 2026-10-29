@@ -1,0 +1,130 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0f172a;
+    color: #f8fafc;
+    min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+    text-align: center;
+    padding: 50px 20px 30px;
+}
+
+header h1 {
+    font-size: 38px;
+    color: #a78bfa;
+    margin-bottom: 12px;
+}
+
+header p {
+    color: #94a3b8;
+    font-size: 16px;
+}
+
+/* Organização dos cartões */
+main {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Cartões */
+.card {
+    background: #1e293b;
+    border: 1px solid #334155;
+    border-radius: 15px;
+    padding: 30px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    border-color: #a78bfa;
+    transform: translateY(-3px);
+}
+
+.card h2 {
+    color: #c4b5fd;
+    font-size: 21px;
+    margin-bottom: 20px;
+}
+
+/* Campos de entrada */
+input {
+    width: 100%;
+    padding: 14px;
+    border-radius: 8px;
+    border: 1px solid #475569;
+    background: #0f172a;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #a78bfa;
+}
+
+/* Botões */
+button {
+    width: 100%;
+    padding: 13px;
+    border: none;
+    border-radius: 8px;
+    background: #8b5cf6;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #7c3aed;
+}
+
+/* Resultados */
+.card p {
+    margin-top: 18px;
+    font-size: 15px;
+    min-height: 20px;
+}
+
+.sucesso {
+    color: #4ade80;
+}
+
+.erro {
+    color: #fb7185;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 30px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+/* Responsividade */
+@media (max-width: 700px) {
+    main {
+        grid-template-columns: 1fr;
+    }
+
+    header h1 {
+        font-size: 30px;
+    }
+}
